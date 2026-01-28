@@ -1,0 +1,84 @@
+.home-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.home-hero {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.home-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://cdn.pixabay.com/photo/2017/07/13/08/59/greenhouse-2499758_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.75);
+}
+
+.home-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 40px 24px;
+  color: #fff;
+}
+
+.home-hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0 0 12px 0;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.home-divider {
+  width: 60px;
+  height: 3px;
+  background: #4caf50;
+  margin: 16px auto;
+  border-radius: 2px;
+}
+
+.home-hero-content p {
+  font-size: 1.25rem;
+  margin: 0 0 28px 0;
+  opacity: 0.95;
+}
+
+.home-cta {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.home-cta:hover {
+  background: #43a047;
+  transform: translateY(-1px);
+}
+
+.home-about {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+}
+
+@media (max-width: 768px) {
+  .home-hero {
+    min-height: 45vh;
+  }
+
+  .home-about {
+    padding: 32px 16px 48px;
+  }
+}
